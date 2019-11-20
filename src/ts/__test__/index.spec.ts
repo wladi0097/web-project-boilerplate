@@ -1,5 +1,5 @@
-describe('works', function () {
-    it('should work', function () {
-        expect('works').toBe('works')
+describe('works', () => {
+    it('should work', () => {
+        expect('works').toBe('works');
     });
 });
