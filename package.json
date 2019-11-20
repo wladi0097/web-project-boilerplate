@@ -4,9 +4,8 @@
   "description": "",
   "main": "",
   "scripts": {
-    "start": "npm run build:dev",
-    "build:dev": "webpack-dev-server --env dev --mode none",
-    "build:prod": "webpack --env prod --mode production",
+    "start": "webpack-dev-server --env dev --mode none",
+    "build": "webpack --env prod --mode production",
     "test": "jest",
     "testw": "jest --watch",
     "testc": "jest --coverage",
