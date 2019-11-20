@@ -1,4 +1,4 @@
-# Fully structured frontend setup with:
+# Fully structured frontend setup
 
 ### For what?
 * Simple one pager
