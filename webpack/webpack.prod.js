@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackMd5Hash = require('webpack-md5-hash');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const common = require('./webpack.common.js');
 const merge = require('webpack-merge');
 const {prod_Path, src_Path} = require('./path');
@@ -30,7 +30,8 @@ module.exports = merge(common, {
         ]
     },
     plugins: [
-        new CleanWebpackPlugin(path.resolve(__dirname, prod_Path), {
+        new CleanWebpackPlugin({
+            cleanOnceBeforeBuildPatterns: path.resolve(__dirname, prod_Path),
             root: process.cwd()
         }),
         new MiniCssExtractPlugin({

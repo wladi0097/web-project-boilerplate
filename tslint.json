@@ -11,7 +11,11 @@
     "no-console": true,
     "no-eval": true,
     "no-empty": true,
-    "no-string-literal": true
+    "no-string-literal": true,
+    "quotemark": [
+      true,
+      "single"
+    ]
   },
   "rulesDirectory": []
 }

@@ -41,6 +41,7 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
+    "@types/jest": "^24.0.23",
     "normalize.css": "^8.0.1"
   }
 }
