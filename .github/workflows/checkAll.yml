@@ -1,4 +1,4 @@
-name: Node CI
+name: Check All
 
 on: [push]
 
@@ -13,17 +13,16 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: npm install
+    - name: Install
       run: npm ci
       env:
         CI: true
-    - name: lint css
-      run: npm lints
-    - name: lint ts
-      run: npm lintj
-    - name: test
-      run: npm test
-    - name: build
-      run: npm build
-    
-   
+    - name: Lint css
+      run: npm run lints
+    - name: Lint ts
+      run: npm run lintj
+    - name: Test
+      run: npm run test
+    - name: Build
+      run: npm run build
+      
