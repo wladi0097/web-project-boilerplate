@@ -1,0 +1,17 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint:recommended"
+  ],
+  "jsRules": {},
+  "rules": {
+    "no-any": true,
+    "no-empty-interface": true,
+    "typedef": true,
+    "no-console": true,
+    "no-eval": true,
+    "no-empty": true,
+    "no-string-literal": true
+  },
+  "rulesDirectory": []
+}

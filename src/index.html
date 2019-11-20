@@ -1,0 +1,15 @@
+<html>
+
+<head>
+    <%= require('html-loader!./html/head.html') %>
+    <link href="<%=htmlWebpackPlugin.files.chunks.main.css %>" rel="stylesheet">
+</head>
+
+<body>
+<%= require('html-loader!./html/index.html') %>
+
+<script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+<%= require('html-loader!./html/scripts.html') %>
+</body>
+
+</html>
